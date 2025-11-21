@@ -1,2 +1,2 @@
-# mf-practice-main-app
+# microfrontend-realworld-app
 Microfrontend practice with module federation, main application
