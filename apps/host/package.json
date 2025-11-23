@@ -11,5 +11,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.139.3"
+  },
+  "devDependencies": {
+    "@tanstack/router-plugin": "^1.139.3"
   }
 }

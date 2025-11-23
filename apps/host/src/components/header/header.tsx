@@ -1,82 +1,82 @@
 import { Fragment } from 'react';
 
-const Link = ({ activeClassName = '', ...props }) => (
-  <a {...props} data-active={activeClassName} />
-);
+import { RouterLink } from '../router-link';
 
 export const Header = () => {
-  const currentUser = {
-    username: 'Jhon',
-    image:
-      'https://raw.githubusercontent.com/gothinkster/node-express-realworld-example-app/refs/heads/master/src/assets/images/smiley-cyrus.jpeg',
-  };
+  const currentUser = null as unknown as { username: string; image: string };
+  // const currentUser = {
+  //   username: 'Jhon',
+  //   image:
+  //     'https://raw.githubusercontent.com/gothinkster/node-express-realworld-example-app/refs/heads/master/src/assets/images/smiley-cyrus.jpeg',
+  // };
 
   return (
     <nav className="navbar navbar-light">
       <div className="container">
-        <Link className="navbar-brand" href="/">
+        <RouterLink className="navbar-brand" href="/">
           conduit
-        </Link>
+        </RouterLink>
         <ul className="nav navbar-nav pull-xs-right">
           <li className="nav-item">
-            <Link className="nav-link" href="/" activeClassName="active">
+            <RouterLink className="nav-link" href="/" activeClassName="active">
               Home
-            </Link>
+            </RouterLink>
           </li>
           {currentUser ? (
             <Fragment>
               <li className="nav-item">
-                <Link
+                <RouterLink
                   className="nav-link"
                   href="/editor"
                   activeClassName="active"
                 >
                   <i className="ion-compose" />
                   &nbsp;New Post
-                </Link>
+                </RouterLink>
               </li>
               <li className="nav-item">
-                <Link
+                <RouterLink
                   className="nav-link"
                   href="/settings"
                   activeClassName="active"
                 >
                   <i className="ion-gear-a" />
                   &nbsp;Settings
-                </Link>
+                </RouterLink>
               </li>
               <li className="nav-item">
-                <Link
+                <RouterLink
                   className="nav-link"
-                  href={`/profile/${currentUser.username}`}
+                  href="/profile/$username"
+                  params={{ username: currentUser.username }}
                   activeClassName="active"
                 >
                   {currentUser.image && (
                     <img src={currentUser.image} className="user-pic" alt="" />
                   )}
                   {currentUser.username}
-                </Link>
+                </RouterLink>
               </li>
             </Fragment>
           ) : (
             <Fragment>
               <li className="nav-item">
-                <Link
+                <RouterLink
                   className="nav-link"
                   href="/login"
                   activeClassName="active"
                 >
                   Sign in
-                </Link>
+                </RouterLink>
               </li>
               <li className="nav-item">
-                <Link
+                <RouterLink
                   className="nav-link"
                   href="/register"
                   activeClassName="active"
                 >
                   Sign up
-                </Link>
+                </RouterLink>
               </li>
             </Fragment>
           )}

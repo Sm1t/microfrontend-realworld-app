@@ -1,3 +1,5 @@
+import { RouterLink } from '../router-link';
+
 type Props = {
   author: {
     image: string;
@@ -20,13 +22,20 @@ export const ArticlePreview = ({
 }: Props) => (
   <div className="article-preview">
     <div className="article-meta">
-      <a href="profile.html">
+      <RouterLink
+        href="/profile/$username"
+        params={{ username: author.username }}
+      >
         <img src={author.image} alt="" />
-      </a>
+      </RouterLink>
       <div className="info">
-        <a href="/" className="author">
+        <RouterLink
+          href="/profile/$username"
+          params={{ username: author.username }}
+          className="author"
+        >
           {author.username}
-        </a>
+        </RouterLink>
         <span className="date">{createdAt}</span>
       </div>
       <button className="btn btn-outline-primary btn-sm pull-xs-right">
