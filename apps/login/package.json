@@ -1,0 +1,15 @@
+{
+  "name": "@mf-realworld/login",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "preview": "rsbuild preview"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
