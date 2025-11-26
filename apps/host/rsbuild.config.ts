@@ -1,9 +1,9 @@
 import { tanstackRouter } from '@tanstack/router-plugin/rspack';
 
-import { getRsbuildConfig } from '../../rsbuild.base';
+import { rsbuildConfig } from '../../rsbuild.base';
+import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
 
-export default getRsbuildConfig((config) => ({
-  ...config,
+export default rsbuildConfig({
   html: {
     template: './index.html',
   },
@@ -17,4 +17,13 @@ export default getRsbuildConfig((config) => ({
       ],
     },
   },
-}));
+  plugins: [
+    pluginModuleFederation({
+      name: 'host',
+      remotes: {
+        remote: 'remote@http://localhost:3001/mf-manifest.json',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+});

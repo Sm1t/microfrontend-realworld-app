@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEventHandler, useState } from 'react';
+import { type ChangeEvent, type FormEventHandler, useState } from 'react';
 import { ErrorsList } from './errors-list';
 import { useLogin } from '../use-cases/use-login';
 

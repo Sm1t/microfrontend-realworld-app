@@ -1,6 +1,6 @@
 # microfrontend-realworld-app
 
-Microfrontend practice with module federation, main application
+Microfrontend practice with module federation. Using RealWorld https://github.com/gothinkster/realworld as a Sample Application.
 
 ## Setup
 
@@ -12,7 +12,8 @@ yarn install
 
 ## Get started
 
-Start the dev server, and the app will be available at [http://localhost:3000](http://localhost:3000).
+Start the dev server. The "host" app will be available at [http://localhost:3000](http://localhost:3000).
+The "remote" app will be available at [http://localhost:3001](http://localhost:3001)
 
 ```bash
 yarn dev
@@ -29,10 +30,3 @@ Preview the production build locally:
 ```bash
 yarn preview
 ```
-
-## Learn more
-
-To learn more about Rsbuild, check out the following resources:
-
-- [Rsbuild documentation](https://rsbuild.rs) - explore Rsbuild features and APIs.
-- [Rsbuild GitHub repository](https://github.com/web-infra-dev/rsbuild) - your feedback and contributions are welcome!
