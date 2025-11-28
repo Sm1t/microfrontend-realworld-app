@@ -15,5 +15,9 @@ dist/
 !.vscode/extensions.json
 .idea
 
+# Yarn
 .yarn/*
 !.yarn/releases
+
+# Temp files
+@mf-types
