@@ -24,7 +24,6 @@ export default rsbuildConfig({
         './login': './src/components/login.tsx',
       },
       shared: ['react', 'react-dom'],
-      getPublicPath: `function() {return "http://localhost:3001/"}`,
     }),
   ],
   html: {
