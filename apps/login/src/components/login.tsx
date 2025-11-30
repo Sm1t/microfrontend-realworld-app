@@ -1,5 +1,6 @@
 import { type ChangeEvent, type FormEventHandler, useState } from 'react';
-import { ErrorsList } from './errors-list';
+import { ErrorsList } from '@mf-realworld/ui-kit';
+
 import { useLogin } from '../use-cases/use-login';
 
 const Login = () => {

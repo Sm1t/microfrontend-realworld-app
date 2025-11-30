@@ -935,6 +935,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@mf-realworld/ui-kit@workspace:shared/ui-kit":
+  version: 0.0.0-use.local
+  resolution: "@mf-realworld/ui-kit@workspace:shared/ui-kit"
+  languageName: unknown
+  linkType: soft
+
+"@mf-realworld/utils@workspace:shared/utils":
+  version: 0.0.0-use.local
+  resolution: "@mf-realworld/utils@workspace:shared/utils"
+  languageName: unknown
+  linkType: soft
+
 "@modern-js/node-bundle-require@npm:2.68.2":
   version: 2.68.2
   resolution: "@modern-js/node-bundle-require@npm:2.68.2"

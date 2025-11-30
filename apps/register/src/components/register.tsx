@@ -1,5 +1,6 @@
 import { type ChangeEvent, type FormEventHandler, useState } from 'react';
-import { ErrorsList } from './errors-list';
+import { ErrorsList } from '@mf-realworld/ui-kit';
+
 import { useRegister } from '../use-cases/use-register';
 
 const Register = () => {

@@ -1,6 +1,5 @@
 import { useState } from 'react';
-
-import { isObject } from '../utils';
+import { isApiError } from '@mf-realworld/utils';
 
 export const useLogin = () => {
   const [data, setData] = useState(null);
@@ -33,8 +32,10 @@ export const useLogin = () => {
         throw data;
       }
     } catch (error) {
-      if (isObject(error) && 'errors' in error && isObject(error.errors)) {
-        setErrors(error.errors as Record<string, string[]>);
+      if (isApiError(error)) {
+        setErrors(error.errors);
+      } else {
+        console.log(error);
       }
     } finally {
       setIsLoading(false);
