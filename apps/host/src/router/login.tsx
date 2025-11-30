@@ -3,7 +3,7 @@ import { createRoute } from '@tanstack/react-router';
 
 import { rootRoute } from './root';
 
-const Login = React.lazy(() => import('remote/login'));
+const Login = React.lazy(() => import('remote_login/login'));
 
 export const loginRoute = createRoute({
   getParentRoute: () => rootRoute,

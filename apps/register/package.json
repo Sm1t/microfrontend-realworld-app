@@ -1,0 +1,15 @@
+{
+  "name": "@mf-realworld/register",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "run -T rsbuild build",
+    "dev": "run -T rsbuild dev --open",
+    "format": "run -T prettier --write .",
+    "lint": "run -T eslint .",
+    "preview": "run -T rsbuild preview"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

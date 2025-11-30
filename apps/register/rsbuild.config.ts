@@ -5,7 +5,7 @@ import { defaultAllowedOrigins } from '@rsbuild/core';
 
 export default rsbuildConfig({
   server: {
-    port: 3001,
+    port: 3002,
     cors: {
       origin: [defaultAllowedOrigins],
     },
@@ -19,9 +19,9 @@ export default rsbuildConfig({
   },
   plugins: [
     pluginModuleFederation({
-      name: 'remote_login',
+      name: 'remote_register',
       exposes: {
-        './login': './src/components/login.tsx',
+        './register': './src/components/register.tsx',
       },
       shared: ['react', 'react-dom'],
     }),

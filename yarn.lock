@@ -907,6 +907,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@mf-realworld/register@workspace:apps/register":
+  version: 0.0.0-use.local
+  resolution: "@mf-realworld/register@workspace:apps/register"
+  languageName: unknown
+  linkType: soft
+
 "@mf-realworld/root@workspace:.":
   version: 0.0.0-use.local
   resolution: "@mf-realworld/root@workspace:."
