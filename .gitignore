@@ -21,3 +21,4 @@ dist/
 
 # Temp files
 @mf-types
+.mf

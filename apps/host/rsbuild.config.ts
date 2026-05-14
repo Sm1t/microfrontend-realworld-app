@@ -1,7 +1,7 @@
 import { tanstackRouter } from '@tanstack/router-plugin/rspack';
+import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
 
 import { rsbuildConfig } from '../../rsbuild.base';
-import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
 
 export default rsbuildConfig({
   html: {

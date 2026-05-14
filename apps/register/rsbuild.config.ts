@@ -1,7 +1,7 @@
 import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
+import { defaultAllowedOrigins } from '@rsbuild/core';
 
 import { rsbuildConfig } from '../../rsbuild.base';
-import { defaultAllowedOrigins } from '@rsbuild/core';
 
 export default rsbuildConfig({
   server: {

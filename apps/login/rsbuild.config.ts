@@ -1,7 +1,7 @@
 import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
+import { defaultAllowedOrigins } from '@rsbuild/core';
 
 import { rsbuildConfig } from '../../rsbuild.base';
-import { defaultAllowedOrigins } from '@rsbuild/core';
 
 export default rsbuildConfig({
   server: {
@@ -23,7 +23,12 @@ export default rsbuildConfig({
       exposes: {
         './login': './src/components/login.tsx',
       },
-      shared: ['react', 'react-dom'],
+      shared: [
+        'react',
+        'react-dom',
+        '@mf-realworld/utils',
+        '@mf-realworld/ui-kit',
+      ],
     }),
   ],
   html: {

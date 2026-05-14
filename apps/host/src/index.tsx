@@ -1,2 +1,2 @@
 import('./bootstrap');
-import('../main.css');
+import('../../../main.css');

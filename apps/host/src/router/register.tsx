@@ -8,5 +8,9 @@ const Register = React.lazy(() => import('remote_register/register'));
 export const registerRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/register',
-  component: Register,
+  component: () => (
+    <React.Suspense fallback={<div>Загрузка...</div>}>
+      <Register />
+    </React.Suspense>
+  ),
 });

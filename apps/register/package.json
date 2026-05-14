@@ -11,5 +11,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@mf-realworld/utils": "workspace:*",
+    "@mf-realworld/ui-kit": "workspace:*"
   }
 }

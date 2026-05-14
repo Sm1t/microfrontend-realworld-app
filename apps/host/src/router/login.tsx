@@ -8,5 +8,9 @@ const Login = React.lazy(() => import('remote_login/login'));
 export const loginRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/login',
-  component: Login,
+  component: () => (
+    <React.Suspense fallback={<div>Загрузка...</div>}>
+      <Login />
+    </React.Suspense>
+  ),
 });

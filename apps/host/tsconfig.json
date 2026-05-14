@@ -1,6 +1,6 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["src", "./@mf-types/*"],
+  "include": ["src", "./@mf-types/*", "../../env.d.ts"],
   "compilerOptions": {
     "paths": {
       "*": ["./@mf-types/*"]
