@@ -1,9 +1,7 @@
 import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
-import { defaultAllowedOrigins } from '@rsbuild/core';
+import { defaultAllowedOrigins, defineConfig } from '@rsbuild/core';
 
-import { rsbuildConfig } from '../../rsbuild.base';
-
-export default rsbuildConfig({
+export default defineConfig({
   server: {
     port: 3002,
     cors: {
@@ -26,7 +24,4 @@ export default rsbuildConfig({
       shared: ['react', 'react-dom'],
     }),
   ],
-  html: {
-    template: './index.html',
-  },
 });

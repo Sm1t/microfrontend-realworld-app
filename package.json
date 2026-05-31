@@ -11,13 +11,13 @@
     "shared/*"
   ],
   "scripts": {
-    "test": "yarn workspaces foreach --since -p run test",
-    "build": "yarn workspaces foreach --since -pt run build",
-    "build:all": "yarn workspaces foreach -A -p --exclude . run build",
-    "preview": "yarn workspaces foreach --since -pt run preview",
-    "preview:all": "yarn workspaces foreach -A -p --exclude . run preview",
     "dev": "yarn workspaces foreach --since -pt run dev",
-    "dev:all": "yarn workspaces foreach -A -p --exclude . run dev"
+    "dev:all": "yarn workspaces foreach -A -pi --exclude . run dev",
+    "build": "yarn workspaces foreach --since -pt run build",
+    "build:all": "yarn workspaces foreach -A -pi --exclude . run build",
+    "preview": "yarn workspaces foreach --since -pt run preview",
+    "preview:all": "yarn workspaces foreach -A -pi --exclude . run preview",
+    "test": "yarn workspaces foreach --since -p run test"
   },
   "dependencies": {
     "react": "^19.2.0",

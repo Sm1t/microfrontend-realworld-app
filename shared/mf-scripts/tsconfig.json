@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "target": "es2017",
+    "module": "NodeNext",
+    "skipLibCheck": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "declaration": true,
+    "moduleResolution": "nodenext",
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts"]
+}

@@ -3,17 +3,20 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "run -T rsbuild build",
-    "dev": "run -T rsbuild dev --open",
+    "dev": "mf-scripts dev",
+    "build": "mf-scripts build",
+    "preview": "mf-scripts preview",
     "format": "run -T prettier --write .",
-    "lint": "run -T eslint .",
-    "preview": "run -T rsbuild preview"
+    "lint": "run -T eslint ."
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@mf-realworld/utils": "workspace:*",
-    "@mf-realworld/ui-kit": "workspace:*"
+    "@mf-realworld/ui-kit": "workspace:*",
+    "@mf-realworld/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@mf-realworld/mf-scripts": "workspace:*"
   }
 }

@@ -1,12 +1,8 @@
 import { tanstackRouter } from '@tanstack/router-plugin/rspack';
 import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
+import { defineConfig } from '@rsbuild/core';
 
-import { rsbuildConfig } from '../../rsbuild.base';
-
-export default rsbuildConfig({
-  html: {
-    template: './index.html',
-  },
+export default defineConfig({
   tools: {
     rspack: {
       plugins: [
