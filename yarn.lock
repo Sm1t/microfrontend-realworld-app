@@ -779,6 +779,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@mf-realworld/ts@workspace:shared/ts":
+  version: 0.0.0-use.local
+  resolution: "@mf-realworld/ts@workspace:shared/ts"
+  languageName: unknown
+  linkType: soft
+
 "@mf-realworld/ui-kit@workspace:*, @mf-realworld/ui-kit@workspace:shared/ui-kit":
   version: 0.0.0-use.local
   resolution: "@mf-realworld/ui-kit@workspace:shared/ui-kit"
