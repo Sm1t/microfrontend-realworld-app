@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from '@tanstack/react-router';
 import { router } from './router';
 
+import '@mf-realworld/ui-kit/main.css';
+
 const rootElement = document.getElementById('root')!;
 
 if (!rootElement.innerHTML) {

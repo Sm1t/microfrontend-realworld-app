@@ -1,6 +1,6 @@
 {
   "extends": "@mf-realworld/ts/tsconfig.json",
-  "include": ["src", "./@mf-types/*", "@mf-realworld/ts/env.d.ts"],
+  "include": ["src", "./@mf-types/*", "./env.d.ts"],
   "compilerOptions": {
     "paths": {
       "*": ["./@mf-types/*"]

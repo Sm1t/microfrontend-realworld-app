@@ -4,5 +4,9 @@
   "type": "module",
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    "./main.css": "./main.css",
+    ".": "./index.ts"
   }
 }

@@ -13,6 +13,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@mf-realworld/ts": "workspace:*",
     "@mf-realworld/ui-kit": "workspace:*",
     "@mf-realworld/utils": "workspace:*"
   },
