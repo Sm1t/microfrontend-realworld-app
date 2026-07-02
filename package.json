@@ -20,6 +20,7 @@
     "test": "yarn workspaces foreach --since -p run test"
   },
   "dependencies": {
+    "@tanstack/react-router": "^1.170.16",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },

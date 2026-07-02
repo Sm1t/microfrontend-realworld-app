@@ -1,5 +1,5 @@
 {
-  "name": "@mf-realworld/host",
+  "name": "@mf-realworld/profile",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -14,10 +14,9 @@
   },
   "dependencies": {
     "@mf-realworld/ts": "workspace:*",
-    "@mf-realworld/utils": "workspace:*"
+    "@mf-realworld/ui-kit": "workspace:*"
   },
   "devDependencies": {
-    "@mf-realworld/mf-scripts": "workspace:*",
-    "@tanstack/router-plugin": "^1.139.3"
+    "@mf-realworld/mf-scripts": "workspace:*"
   }
 }
